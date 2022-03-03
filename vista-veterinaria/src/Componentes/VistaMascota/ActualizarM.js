@@ -38,8 +38,8 @@ export default function ActualizarM(props) {
                     <input className='input-group-text texto' type="text" name="fechaIngreso" id="fechaIngresoM2" placeholder='Fecha de ingreso' onChange={e=>setFechaIngreso(e.target.value)}/>
                     <input className='input-group-text texto' type="text" name="razon" id="razonM2" placeholder='Razon' onChange={e=>setRazon(e.target.value)}/>
                 </div>
-                <div className='but'><button onClick={()=>{
-                    if(idMascota!==0 && nombre!=='' && tipo!=='' && idDuenio!==0 && idCita!==0 && idMedicamento!==0 && fechaIngreso!=='' && razon!==''){
+                <div className='but'><button onClick={()=> {
+                    if (idMascota !== 0 && nombre !== '' && tipo !== '' && idDuenio !== 0 && idCita !== 0 && idMedicamento !== 0 && fechaIngreso !== '' && razon !== '') {
                         handleClick();
                         hundleClick();
                         setNombre('');
@@ -49,8 +49,10 @@ export default function ActualizarM(props) {
                         setIdMedicamento('')
                         setFechaIngreso('');
                         setRazon('');
-                        
-                }} className='btn btn-dark'>Actualizar</button></div>
+                }
+                }
+                } className='btn btn-dark'>Actualizar</button>
+                </div>
             </div>
     )
 }

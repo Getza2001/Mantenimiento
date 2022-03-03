@@ -41,7 +41,8 @@ export default function AddDuenio(props) {
                         document.getElementById('direccion').value=''
                     }
                     else alert('Llene todos los campos')}}
-                    > Agregar</button></div>
+                    > Agregar</button>
+                </div>
             </div>
         </div>
     );

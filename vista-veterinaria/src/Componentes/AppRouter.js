@@ -6,6 +6,7 @@ import MenuPrincipal from './VistaCita/MenuPrincipalC';
 import MenuPrincipalD from './VistaDuenios/MenuPrincipalD';
 import MenuPrincipalM from './VistaMascota/MenuPrincipalM';
 import MenuPrincipalMe from './VistaMedicamentos/MenuPrincipalMe.js';
+import MenuPrincipalLo from './VistaLogin/Login.js';
 export default function AppRouter() {
     return (
         <div>
@@ -17,6 +18,7 @@ export default function AppRouter() {
                         <Route path='/duenios' element={<MenuPrincipalD/>}/>
                         <Route path='/mascotas/' element={<MenuPrincipalM/>}/>
                         <Route path='/medicamentos/' element={<MenuPrincipalMe/>}/>
+                        <Route path='/login/' element={<MenuPrincipalLo/>}/>
                     </Routes>
                 </div>
         </div>

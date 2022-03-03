@@ -23,17 +23,17 @@ const BuscarM = (props) => {
                 <div className="inputs">
                     <input className='input-group-text' type='text' id='tipoM3' placeholder='Tipo de Mascota' onChange={e=>setTipo(e.target.value)}/>
                     <button className='btn btn-dark'  onClick={()=>{
-                        if(tipo!==''){ 
+                        if(tipo!==''){
                             handleClick();
                             setTipo('');
                             document.getElementById('tipoM3').value=''
                         }
                         else alert('Rellene el formulario');
-                    }}>Actualizar</button></div>
-                    <button className='btn btn-dark botn2' onClick={()=>{
-                        hundleClick();
-                    }}>Limpiar</button>
+                    }}>Actualizar</button>
                 </div>
+                <button className='btn btn-dark botn2' onClick={()=>{
+                    hundleClick();
+                }}>Limpiar</button>
         </div>
     )
 }
